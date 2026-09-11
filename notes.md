@@ -109,9 +109,9 @@ id      title      year     language        run_time
 4          kgf4      2028      kannada           168
 5          kgf5      2030      kannada           169
 ```
-
+'''
 `http_request for adding new movie`
-
+```
 url: localhost:5100/movie/
 method:POST
 body:{
@@ -120,15 +120,19 @@ body:{
     "language":"kannada",
     "run_time":230
 }
-
+```
+```
 `http_request for list all movie`
 
 url: localhost:5100/movie/
 method:GET
+```
+```
 `http_request for fetching movie specific detail`
 url: localhost:5100/movie/5/
 method:GET
-
+```
+```
 `http_request for update movie`
 url: localhost:5100/movie/
 method:POST
@@ -138,9 +142,10 @@ body:{
     "language":"English",
     "run_time":245
 }
-
+```
+```
 `http_request for delete movie`
 url: localhost:5100/movie/5/
 method:DELETE
-
+```
 
