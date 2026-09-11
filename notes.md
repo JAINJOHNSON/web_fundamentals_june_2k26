@@ -149,3 +149,54 @@ url: localhost:5100/movie/5/
 method:DELETE
 ```
 
+
+# Hospital Task
+```
+id      patient_name    department    doctor_name        fee
+
+
+1          Isac         Dental           Shijin            200
+2          Tony         ENT              kannada           350
+3          Mary         Dental           Shijin            200
+4          Jain         Neuro            Godwin            400
+5          Eva          General          Rahul             250
+```
+'''
+`http_request for adding new Patient Record`
+```
+url: localhost:8100/Hospital/
+method:POST
+body:{
+    "patient_name":"Jancy",
+    "department":Dental,
+    "doctor_name":"Johnson",
+    "Fee":250
+}
+```
+```
+`http_request for list all Patient Record`
+
+url: localhost:8100/Hospital/
+method:GET
+```
+```
+`http_request for fetching Patient Record specific detail`
+url: localhost:8100/Hospital/2/
+method:GET
+```
+```
+`http_request for update Patient Record`
+url: localhost:8100/Hospital/
+method:PUT
+body:{
+    "patient_name":"Jancy",
+    "department":Neuro,
+    "doctor_name":"Johnson",
+    "Fee":600
+}
+```
+```
+`http_request for delete Patient Record`
+url: localhost:8100/Hospital/5/
+method:DELETE
+```
