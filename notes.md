@@ -112,7 +112,7 @@ id      title      year     language        run_time
 '''
 `http_request for adding new movie`
 ```
-url: localhost:5100/movie/
+url: localhost:8000/movie/
 method:POST
 body:{
     "title":"KGF",
@@ -124,17 +124,17 @@ body:{
 ```
 `http_request for list all movie`
 
-url: localhost:5100/movie/
+url: localhost:8000/movie/
 method:GET
 ```
 ```
 `http_request for fetching movie specific detail`
-url: localhost:5100/movie/5/
+url: localhost:8000/movie/5/
 method:GET
 ```
 ```
 `http_request for update movie`
-url: localhost:5100/movie/
+url: localhost:8000/movie/
 method:POST
 body:{
     "title":"Pirate of the caribiean",
@@ -145,7 +145,7 @@ body:{
 ```
 ```
 `http_request for delete movie`
-url: localhost:5100/movie/5/
+url: localhost:8000/movie/5/
 method:DELETE
 ```
 
@@ -164,7 +164,7 @@ id      patient_name    department    doctor_name        fee
 '''
 `http_request for adding new Patient Record`
 ```
-url: localhost:8100/Hospital/
+url: localhost:8000/Hospital/
 method:POST
 body:{
     "patient_name":"Jancy",
@@ -176,17 +176,17 @@ body:{
 ```
 `http_request for list all Patient Record`
 
-url: localhost:8100/Hospital/
+url: localhost:8000/Hospital/
 method:GET
 ```
 ```
 `http_request for fetching Patient Record specific detail`
-url: localhost:8100/Hospital/2/
+url: localhost:8000/Hospital/2/
 method:GET
 ```
 ```
 `http_request for update Patient Record`
-url: localhost:8100/Hospital/
+url: localhost:8000/Hospital/
 method:PUT
 body:{
     "patient_name":"Jancy",
@@ -197,6 +197,6 @@ body:{
 ```
 ```
 `http_request for delete Patient Record`
-url: localhost:8100/Hospital/5/
+url: localhost:8000/Hospital/5/
 method:DELETE
 ```
