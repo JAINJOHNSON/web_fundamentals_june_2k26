@@ -111,7 +111,36 @@ id      title      year     language        run_time
 ```
 
 `http_request for adding new movie`
+
+url: localhost:5100/movie/
+method:POST
+body:{
+    "title":"KGF",
+    "year":2024,
+    "language":"kannada",
+    "run_time":230
+}
+
 `http_request for list all movie`
-`http_request for fetching movie detail`
+
+url: localhost:5100/movie/
+method:GET
+`http_request for fetching movie specific detail`
+url: localhost:5100/movie/5/
+method:GET
+
 `http_request for update movie`
+url: localhost:5100/movie/
+method:POST
+body:{
+    "title":"Pirate of the caribiean",
+    "year":2014,
+    "language":"English",
+    "run_time":245
+}
+
 `http_request for delete movie`
+url: localhost:5100/movie/5/
+method:DELETE
+
+
